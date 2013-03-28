@@ -25,6 +25,22 @@
               }
             }
           ?>          
+
+          <?php 
+            while (have_posts()) : the_post();
+              if(is_singular() && has_post_thumbnail() && !get_post_format() && get_theme_mod('show_superteaser',true)) {
+                echo '<div class="supterteaser-'.$structure.'">';
+                  get_template_part( 'content', 'single-superteaser-top' );
+                echo '</div>';
+              } elseif(is_singular() && get_post_format() == 'gallery' && get_theme_mod('show_superteaser',true)) {
+                echo '<div class="supterteaser-'.$structure.'">';
+                  get_template_part( 'content', 'single-superteaser-top-gallery' );
+                echo '</div>';
+              }
+            endwhile; 
+          ?>
+
+
           <div class="<?php echo $structure ?>">
 
             <?php if($sidebar1 != false): ?>

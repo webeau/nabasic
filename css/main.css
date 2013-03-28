@@ -6,14 +6,7 @@
  * @link http://www.google.com/webfonts
  */
 
-@import url(http://fonts.googleapis.com/css?family=Tinos:400,700);
-@media all {
 
-#main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {
-font-family: 'Tinos', serif;
-}
-
-}
 
 
 @media all { 
@@ -191,6 +184,9 @@ font-size: 1em;
 line-height: 1em;
 margin: 0;
 font-weight: normal;
+}
+#main td {
+vertical-align: top;
 }
 html.csstransitions #main a {
 -webkit-transition: all 0.2s linear;
@@ -503,6 +499,14 @@ margin: 0 0 1em 0;
 }
 body .superteaser-top {
 padding: 1em 1em 0 1em;
+}
+body article iframe {
+border: 1px solid #aaa;
+background-color: #ddd;
+}
+body article div.carousel {
+border: 1px solid #aaa;
+background-color: #ddd;
 }
 
 }

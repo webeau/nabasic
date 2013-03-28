@@ -74,7 +74,7 @@ function wpml_topnavsubmenu_toggle() {
 };
 
 function smooth_anker_scroll() {
-  $('a[href^="#"]').bind('click.smoothscroll',function (e) {
+  $('a[href^="#"] :not(div.carousel a)').bind('click.smoothscroll',function (e) {
       e.preventDefault();
       var target = this.hash;
           $target = $(target);
