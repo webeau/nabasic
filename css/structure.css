@@ -1,0 +1,367 @@
+@media all {
+
+.na-ie-clearing { 
+  display:none; 
+}
+.na-clearfix:before {
+  content:"";
+  display:table;
+}
+.na-clearfix:after {
+  clear:both;
+  content:".";
+  display:block;
+  font-size:0;
+  height:0;
+  visibility:hidden;
+}
+.clearfix {
+  clear:both;
+}
+  
+}
+
+@media screen, projection {
+
+/* background fix 
+html, body {
+height: 100%;
+width: 100%;
+overflow: hidden;
+}
+#stage {
+height: 100%;
+width: 100%;
+overflow: auto;
+z-index: 1;
+}
+*/
+html, body {
+position: relative;
+width: 100%;
+}
+#stage {
+position: relative;
+width: 100%;
+}
+}
+
+@media screen {
+
+/* layout */
+#stage > div > header,
+#stage > div > #main,
+#stage > div > footer { 
+  min-width: 320px; 
+}
+
+.na-wrapper {
+  margin: 0 auto;
+  position: relative;
+  width:100%;
+  min-width: 320px;
+  max-width: 1000px;
+}
+
+.na-wbox {
+  padding: 0px;
+}
+
+}
+
+@media screen and ( max-width: 1060px ) {
+
+header > .na-wrapper > .na-wbox {
+}
+.na-wrapper {
+}
+
+}
+
+@media screen and ( max-width: 900px ) {
+
+header > .na-wrapper > .na-wbox {
+}
+.na-wrapper {
+}
+
+}
+
+@media screen and ( max-width: 740px ) {
+
+header > .na-wrapper > .na-wbox {
+}
+.na-wrapper {
+}
+
+}
+
+@media screen, projection {
+
+/*
+ * Structure Design:
+ * Column 1: Pre-Content / Navigation
+ * Column 2: Content
+ * Column 3: Additional-Content / Sidebar
+ */
+
+#main .na-col2 .na-cbox {
+min-height: 400px;
+}
+
+/* column layout 1 */
+#main .na-column2 { 
+  padding-right: 0px;
+}
+#main .na-column2 .na-col1,  /* precontent */
+#main .na-column2 .na-col3 {  /* sidebar */
+  display: none;
+}
+
+/* column layout 2-3 */
+#main .na-column23 { 
+  display: block;
+  overflow: hidden;
+  padding-right: 292px; /* column width + column margin + border + border */
+  width: auto;
+}
+#main .na-column23 .na-col1 {  /* precontent */
+  display: none;
+}
+#main .na-column23 .na-col2 {  /* content */
+  position: relative;
+  float: left;
+  width: 100%;
+}
+#main .na-column23 .na-col3 { /* sidebar */
+  position: relative;
+  float: left;
+  width: 292px; /* column width */
+  margin: 0 -292px 0 0; /* column width + border + margin */
+}
+#main .na-column23 .na-col3 .na-cbox {
+margin-left: 8px;
+}
+
+/* column layout 3-2 */
+#main .na-column32 { 
+  display: block;
+  overflow: hidden;
+  padding-left: 292px; /* column width + column margin + border + border */
+  width: auto;
+}
+#main .na-column32 .na-col1 {  /* precontent */
+  display: none;
+}
+#main .na-column32 .na-col2 {  /* content */
+  position: relative;
+  float: left;
+  width: 100%;
+}
+#main .na-column32 .na-col3 { /* sidebar */
+  position: relative;
+  float: left;
+  width: 292px; /* column width */
+  right: 292px; /* column width */
+  _right: 0px; /* fix for ie6 */
+  margin: 0 0 0 -100%;
+}
+#main .na-column32 .na-col3 .na-cbox {
+margin-right: 8px;
+}
+
+/* column layout 1-2-3 */
+#main .na-column123 { 
+  display: block;
+  overflow: hidden;
+  padding-left: 292px; /* column width + column margin + border + border */
+  padding-right: 292px; /* column width + column margin + border + border */
+  width: auto;
+}
+#main .na-column123 .na-col1 {  /* precontent */
+  position: relative;
+  float: left;
+  width: 292px; /* column width */
+  margin: 0 0 0 -292px; /* column width + border + margin */
+}
+#main .na-column123 .na-col1 .na-cbox {
+margin-right: 8px;
+}
+#main .na-column123 .na-col2 {  /* content */
+  position: relative;
+  float: left;
+  width: 100%;
+}
+#main .na-column123 .na-col3 { /* sidebar */
+  position: relative;
+  float: left;
+  width: 292px; /* column width */
+  margin: 0 -292px 0 0; /* column width + border + margin */
+}
+#main .na-column123 .na-col3 .na-cbox {
+margin-left: 8px;
+}
+
+/* column layout 1-2 */
+#main .na-column12 { 
+  display: block;
+  overflow: hidden;
+  padding-left: 292px; /* column width + column margin + border + border */
+  width: auto;
+}
+#main .na-column12 .na-col1 {  /* precontent */
+  position: relative;
+  float: left;
+  width: 292px; /* column width */
+  margin: 0 0 0 -292px; /* column width + border + margin */
+}
+#main .na-column12 .na-col1 .na-cbox {
+margin-right: 8px;
+}
+#main .na-column12 .na-col2 {  /* content */
+  position: relative;
+  float: left;
+  width: 100%;
+}
+#main .na-column12 .na-col3 { /* sidebar */
+  display:none;
+}
+
+/* column layout 2-1 */
+#main .na-column21 { 
+  display: block;
+  overflow: hidden;
+  padding-right: 292px; /* column width + column margin + border + border */
+  width: auto;
+}
+#main .na-column21 .na-col1 {  /* precontent */
+  position: relative;
+  float: right;
+  width: 292px; /* column width */
+  margin: 0 -292px 0 0; /* column width + border + margin */
+}
+#main .na-column21 .na-col1 .na-cbox {
+margin-left: 8px;
+}
+#main .na-column21 .na-col2 {  /* content */
+  position: relative;
+  float: right;
+  width: 100%;
+}
+#main .na-column21 .na-col3 { /* sidebar */
+  display:none;
+}
+
+}
+
+@media screen and ( max-width: 960px ) {
+#main .na-col2 .na-cbox {
+min-height: 200px;
+}
+}
+
+@media screen and ( max-width: 767px ) {
+
+/* column layout 2-3 */
+#main .na-column23 { 
+  padding-right: 0 !important; /* column width + column margin + border + border */
+}
+#main .na-column23 .na-col2 {  /* content */
+  float: none !important;
+}
+#main .na-column23 .na-col3 { /* sidebar */
+  float: none !important;
+  width: 100% !important; /* column width */
+  margin: 5px 0 0 0; /* column width + border + margin */
+}
+#main .na-column23 .na-col3 .na-cbox {
+margin-left: 0 !important;
+}
+
+/* column layout 3-2 */
+#main .na-column32 { 
+  padding-left: 0 !important; /* column width + column margin + border + border */
+}
+#main .na-column32 .na-col2 {  /* content */
+  float: none !important;
+}
+#main .na-column32 .na-col3 { /* sidebar */
+  float: none !important;
+  width: 100% !important;
+  right: 0 !important; /* column width */
+  margin: 5px 0 0 0;
+}
+#main .na-column32 .na-col3 .na-cbox {
+margin-right: 0 !important;
+}
+
+/* column layout 1-2-3 */
+#main .na-column123 { 
+  padding-left: 0 !important; /* column width + column margin + border + border */
+  padding-right: 0 !important; /* column width + column margin + border + border */
+}
+#main .na-column123 .na-col1 {  /* precontent */
+  float: none !important;
+  width: 100% !important; /* column width */
+  margin: 0 0 0 0 !important; /* column width + border + margin */
+}
+#main .na-column123 .na-col1 .na-cbox {
+margin-right: 0 !important;
+}
+#main .na-column123 .na-col2 {  /* content */
+  float: none !important;
+  margin: 5px 0 0 0;
+}
+#main .na-column123 .na-col3 { /* sidebar */
+  float: none !important;
+  width: 100% !important; /* column width */
+  margin: 5px 0 0 0; /* column width + border + margin */
+}
+#main .na-column123 .na-col3 .na-cbox {
+margin-left: 0 !important;
+}
+
+/* column layout 1-2 */
+#main .na-column12 { 
+  padding-left: 0 !important; /* column width + column margin + border + border */
+}
+#main .na-column12 .na-col1 {  /* precontent */
+  float: none !important;
+  width: 100% !important; /* column width */
+  margin-left: 0 !important; /* column width + border + margin */
+ margin-bottom: 5px;
+}
+#main .na-column12 .na-col1 .na-cbox {
+margin-right: 0 !important;
+}
+#main .na-column12 .na-col2 {  /* content */
+  float: none !important;
+}
+
+/* column layout 2-1 */
+#main .na-column21 { 
+  padding-right: 0 !important; /* column width + column margin + border + border */
+}
+#main .na-column21 .na-col1 {  /* precontent */
+  float: none !important;
+  width: 100% !important; /* column width */
+  margin-right: 0 !important; /* column width + border + margin */
+ margin-bottom: 5px;
+}
+#main .na-column21 .na-col1 .na-cbox {
+margin-left: 0 !important;
+}
+#main .na-column21 .na-col2 {  /* content */
+  float: none !important;
+}
+
+}
+
+@media print {
+#main .na-col1,  /* precontent */
+#main .na-col3 {  /* sidebar */
+  display: none;
+}
+}
+
+

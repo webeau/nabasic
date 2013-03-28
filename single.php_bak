@@ -1,0 +1,91 @@
+<?php 
+/*
+ * Single
+ * aktuell Kopie von index.html
+ */
+?>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+  
+  <header>
+    <?php if(is_sticky()): ?>
+      <h1>
+        <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php printf( __( 'Permanent Link to %s', 'nabasic' ), get_the_title() ); ?>">
+          <?php the_title(); ?>
+        </a>
+        <span class="status-featured label label-important"><?php _e( 'featured', 'nabasic' ); ?></span>
+      </h1>      
+      <?php if ( has_post_thumbnail() ): // check if the post has a Post Thumbnail assigned to it. ?>
+        <?php 
+          //the_post_thumbnail('large');
+          $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large');
+          //echo $large_image_url[0];
+        ?>
+        <a class="teaserimg" style="background-image:url(<?php echo $large_image_url[0]; ?>" href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"></a>
+      <?php endif; ?>
+    <?php else: ?>
+      <?php if ( has_post_thumbnail() ): // check if the post has a Post Thumbnail assigned to it. ?>
+        <?php 
+          //the_post_thumbnail('large');
+          $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large');
+          //echo $large_image_url[0];
+        ?>
+        <a class="teaserimg" style="background-image:url(<?php echo $large_image_url[0]; ?>" href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"></a>
+      <?php endif; ?>
+      <h1>
+        <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php printf( __( 'Permanent Link to %s', 'nabasic' ), get_the_title() ); ?>">
+          <?php the_title(); ?>
+        </a>
+      </h1>      
+    <?php endif; ?>
+  </header>
+  
+  <aside class="meta">
+    <div class="dateandtime">
+      <span class="label"><?php _e('Published', 'nabasic') ?>:</span>
+      <span class="date"><?php the_date() ?></span>
+      <span class="time"><?php the_time() ?></span>      
+    </div>
+    <div class="author">
+      <span class="label"><?php _e('Author', 'nabasic') ?>:</span>
+      <span class="name"><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author"><?php the_author() ?></a></span>      
+    </div>
+    <div class="category">
+      <span class="label"><?php _e('Categories', 'nabasic') ?>:</span>
+      <span class="category"><?php the_category(', ') ?></span>      
+    </div>
+    <div class="tags">
+      <span class="label"><?php _e('Tags', 'nabasic') ?>:</span>
+      <span class="category"><?php the_tags('',', ') ?></span>      
+    </div>
+    <div class="feed">
+      <span class="label"><?php _e('Comment Feed', 'nabasic') ?>:</span>
+      <span class="feed"><?php comments_rss_link('RSS 2.0'); ?></span>      
+    </div>
+    <div class="edit">
+      <span class="label"><?php _e('Edit', 'nabasic') ?>:</span>
+      <span class="btn"><?php edit_post_link('Edit',''); ?></span>      
+    </div>
+    <div class="comments">
+      <span class="label"><?php _e('Comments', 'nabasic') ?>:</span>
+      <span class="link"><?php comments_popup_link('No Comments »', '1 Comment »', '% Comments »'); ?></span>      
+    </div>
+  </aside>
+  
+  <?php if ( is_search() ) : // Only display Excerpts for Search ?>
+  <div class="entry-summary">
+    <?php the_excerpt(); ?>
+  </div><!-- .entry-summary -->
+  <?php else : ?>
+  <div class="entry-content">
+    <?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'namedia' ) ); ?>
+    <?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'namedia' ), 'after' => '</div>' ) ); ?>
+  </div><!-- .entry-content -->
+  <?php endif; ?>
+
+  <footer>
+    
+    <?php comments_template(); ?>
+    
+  </footer>
+  
+</article>

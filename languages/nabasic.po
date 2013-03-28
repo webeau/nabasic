@@ -1,0 +1,673 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: NA-Basic 0.1\n"
+"POT-Creation-Date: 2013-02-26 13:52+0100\n"
+"PO-Revision-Date: 2013-02-26 14:12+0100\n"
+"Last-Translator: Marco Herzog <marco.herzog@gmail.com>\n"
+"Language-Team: \n"
+"Language: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;_x\n"
+"X-Poedit-Basepath: ../.\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:51
+msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr ""
+
+#: 404.php:52
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: 404.php:61
+msgid "You might have been looking for these posts"
+msgstr ""
+
+#: archive.php:42
+#, php-format
+msgid "Go to the archive for %s"
+msgstr ""
+
+#: archive.php:42
+msgid "d.F Y"
+msgstr ""
+
+#: archive.php:42 archive.php:45
+msgid "d"
+msgstr ""
+
+#: archive.php:43 archive.php:44 archive.php:49 archive.php:50 archive.php:54
+#, php-format
+msgid "Go to archive for %s"
+msgstr ""
+
+#: archive.php:43 archive.php:49
+msgid "F Y"
+msgstr ""
+
+#: archive.php:43 archive.php:49 archive.php:51
+msgid "F"
+msgstr ""
+
+#: archive.php:44 archive.php:50 archive.php:54 archive.php:55
+msgid "Y"
+msgstr ""
+
+#: archive.php:45
+#, php-format
+msgid "Archive for %1$s.%2$s %3$s"
+msgstr ""
+
+#: archive.php:51
+#, php-format
+msgid "Archive for %1$s %2$s"
+msgstr ""
+
+#: archive.php:55
+#, php-format
+msgid "Archive for %1$s"
+msgstr ""
+
+#: archive.php:57
+msgid "Archives"
+msgstr ""
+
+#: comments-popup.php:10
+#, php-format
+msgid "Theme without %1$s"
+msgstr ""
+
+#: comments-popup.php:10
+#, php-format
+msgid "Please include a %1$s template in your theme."
+msgstr ""
+
+#: comments-popup.php:14
+#, php-format
+msgid "%1$s - Comments on %2$s"
+msgstr ""
+
+#: comments-popup.php:33
+msgid "Comments"
+msgstr ""
+
+#: comments-popup.php:35
+msgid ""
+"<abbr title=\"Really Simple Syndication\">RSS</abbr> feed for comments on "
+"this post."
+msgstr ""
+
+#: comments-popup.php:38
+#, php-format
+msgid ""
+"The <abbr title=\"Universal Resource Locator\">URL</abbr> to TrackBack this "
+"entry is: <em>%s</em>"
+msgstr ""
+
+#: comments-popup.php:56
+#, php-format
+msgid "by %1$s &#8212; %2$s @ <a href=\"#comment-%3$s\">%4$s</a>"
+msgstr ""
+
+#: comments-popup.php:62
+msgid "No comments yet."
+msgstr ""
+
+#: comments-popup.php:66
+msgid "Leave a comment"
+msgstr ""
+
+#: comments-popup.php:67
+#, php-format
+msgid ""
+"Line and paragraph breaks automatic, e-mail address never displayed, "
+"<acronym title=\"Hypertext Markup Language\">HTML</acronym> allowed: <code>"
+"%s</code>"
+msgstr ""
+
+#: comments-popup.php:71
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out &raquo;</a>"
+msgstr ""
+
+#: comments-popup.php:75 functions.php:434 functions.php:435
+msgid "Name"
+msgstr ""
+
+#: comments-popup.php:80
+msgid "E-mail"
+msgstr ""
+
+#: comments-popup.php:85
+msgid "<abbr title=\"Universal Resource Locator\">URL</abbr>"
+msgstr ""
+
+#: comments-popup.php:90
+msgid "Your Comment"
+msgstr ""
+
+#: comments-popup.php:103
+msgid "Sorry, the comment form is closed at this time."
+msgstr ""
+
+#: comments-popup.php:108
+msgid "Close this window."
+msgstr ""
+
+#: comments-popup.php:114
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#: comments-popup.php:118
+#, php-format
+msgid ""
+"Powered by <a href=\"%s\" title=\"Powered by WordPress, state-of-the-art "
+"semantic personal publishing platform\"><strong>WordPress</strong></a>"
+msgstr ""
+
+#: comments.php:44
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:46
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:47
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:57
+msgid "Comments are closed."
+msgstr ""
+
+#: content-aside.php:30 content-gallery.php:29 content-gallery.php:65
+#: content-image.php:29 content-image.php:57 content-link.php:29
+#: content-link.php:75 content-post-highlight-first.php:36
+#: content-post-highlight.php:46 content-quote.php:30 content-quote.php:58
+#: content.php:25 content.php:71
+msgid "featured"
+msgstr ""
+
+#: content-aside.php:49 content-aside.php:76 content-gallery.php:114
+#: content-image.php:106 content-link.php:107 content-page.php:20
+#: content-quote.php:89 content-status.php:46 content.php:98 functions.php:396
+msgid "Edit"
+msgstr ""
+
+#: content-aside.php:71 content-link.php:102
+msgid "Leave a reply"
+msgstr ""
+
+#: content-aside.php:71 content-link.php:102
+msgid "1 Reply"
+msgstr ""
+
+#: content-aside.php:71 content-link.php:102
+msgid "% Replies"
+msgstr ""
+
+#: content-gallery.php:77 content-image.php:69 content-link.php:87
+#: content-page.php:15 content-quote.php:70 content.php:83 image.php:130
+#: inc/enhanced-link-pages.php:15
+msgid "Pages:"
+msgstr ""
+
+#: content-gallery.php:86
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: content-gallery.php:102
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: content-link.php:73
+msgid "Link: "
+msgstr ""
+
+#: content-none.php:9
+msgid "Nothing Found &nbsp;&nbsp;&nbsp; :-("
+msgstr ""
+
+#: content-none.php:13
+msgid ""
+"Apologies, but no results were found. Perhaps searching will help find a "
+"related post."
+msgstr ""
+
+#: functions.php:48
+msgid "Main Sidebar"
+msgstr ""
+
+#: functions.php:50 functions.php:59
+msgid ""
+"Appears on posts and pages except the optional Front Page template, which "
+"has its own widgets"
+msgstr ""
+
+#: functions.php:57
+msgid "Left Sidebar"
+msgstr ""
+
+#: functions.php:71
+msgid "Main Menu"
+msgstr ""
+
+#: functions.php:97 functions.php:108 functions.php:120
+msgid "more..."
+msgstr ""
+
+#: functions.php:160 functions.php:177 single.php:49 single.php:64
+msgid "Post navigation"
+msgstr ""
+
+#: functions.php:162
+msgid "<span class=\"meta-nav\">&lt;&lt;</span> Older posts"
+msgstr ""
+
+#: functions.php:163
+msgid "Newer posts <span class=\"meta-nav\">&gt;&gt;</span>"
+msgstr ""
+
+#: functions.php:179 functions.php:186
+msgid "<span class=\"meta-nav\">&gt;&gt;</span>"
+msgstr ""
+
+#: functions.php:180 functions.php:183
+msgid "<span class=\"meta-nav\">&lt;&lt;</span>"
+msgstr ""
+
+#: functions.php:338
+msgid "Pingback:"
+msgstr ""
+
+#: functions.php:339
+msgid "(Edit)"
+msgstr ""
+
+#: functions.php:351
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:362 functions.php:377
+msgid "Go to "
+msgstr ""
+
+#: functions.php:370
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: functions.php:375
+msgid "Post author"
+msgstr ""
+
+#: functions.php:389
+msgid "Permalink"
+msgstr ""
+
+#: functions.php:393
+msgid "Go to permalink"
+msgstr ""
+
+#: functions.php:398
+msgid "Reply"
+msgstr ""
+
+#: functions.php:438 functions.php:439
+msgid "Email"
+msgstr ""
+
+#: functions.php:440
+msgid "Your email address will not be published."
+msgstr ""
+
+#: functions.php:443 functions.php:444
+msgid "Website"
+msgstr ""
+
+#: functions.php:470 functions.php:471
+msgid "Comment"
+msgstr ""
+
+#: functions.php:472
+#, php-format
+msgid ""
+"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
+"and attributes: %s"
+msgstr ""
+
+#: functions.php:490
+msgid ""
+"This post is password protected. To view it please enter your password below."
+msgstr ""
+
+#: functions.php:493 functions.php:494
+msgid "Password"
+msgstr ""
+
+#: functions.php:495
+msgid "Go!"
+msgstr ""
+
+#: header.php:67
+msgid "Site-Menu"
+msgstr ""
+
+#: header.php:68
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:73
+msgid "Main-Menu"
+msgstr ""
+
+#: image.php:48
+#, php-format
+msgid ""
+"<nav><a href=\"%2$s\" title=\"Back to the post %1$s\"><i class=\"icon-arrow-"
+"left\"></i> Back to the post \"%3$s\"</a></nav>"
+msgstr ""
+
+#: image.php:56
+msgid "&larr; Previous"
+msgstr ""
+
+#: image.php:57
+msgid "Next &rarr;"
+msgstr ""
+
+#: image.php:98
+#, php-format
+msgid ""
+"<a href=\"%1$s\" title=\"Edit image %2$s\" class=\"edit-link\"><i class="
+"\"icon-pencil\"></i></a>"
+msgstr ""
+
+#: image.php:103
+#, php-format
+msgid ""
+"<a href=\"%1$s\" target=\"_blank\" title=\"Full-size image %2$s - %3$s x %4$s"
+"\" class=\"edit-link\"><i class=\"icon-download-alt\"></i></a>"
+msgstr ""
+
+#: image.php:118
+#, php-format
+msgid "<time datetime=\"%1$s\">%2$s</time>"
+msgstr ""
+
+#: search.php:35 searchform.php:6
+msgid "Search"
+msgstr ""
+
+#: search.php:62
+msgid "Sorry, but you are looking for something that isn't here."
+msgstr ""
+
+#: single.php:51 single.php:66
+msgid "&larr;"
+msgstr ""
+
+#: single.php:52 single.php:67
+msgid "&rarr;"
+msgstr ""
+
+#: inc/enhanced-link-pages.php:15
+msgid "Next page"
+msgstr ""
+
+#: inc/enhanced-link-pages.php:16
+msgid "Previous page"
+msgstr ""
+
+#: inc/theme-options.php:41
+msgid "Show description"
+msgstr ""
+
+#: inc/theme-options.php:60
+msgid "Logo"
+msgstr ""
+
+#: inc/theme-options.php:81
+msgid "Text Color"
+msgstr ""
+
+#: inc/theme-options.php:103
+msgid "Link Color"
+msgstr ""
+
+#: inc/theme-options.php:124
+msgid "Background as Cover"
+msgstr ""
+
+#: inc/theme-options.php:137
+msgid "Theme Layout"
+msgstr ""
+
+#: inc/theme-options.php:140 inc/theme-options.php:284
+#: inc/theme-options.php:359 inc/theme-options.php:418
+#: inc/theme-options.php:461 inc/theme-options.php:606
+#: inc/theme-options.php:716 inc/theme-options.php:826
+msgid "Allows you to define the default theme layout."
+msgstr ""
+
+#: inc/theme-options.php:155 inc/theme-options.php:315
+#: inc/theme-options.php:390
+msgid "Default Structure"
+msgstr ""
+
+#: inc/theme-options.php:172
+msgid "Width"
+msgstr ""
+
+#: inc/theme-options.php:188
+msgid "Maximum Width"
+msgstr ""
+
+#: inc/theme-options.php:203
+msgid "Page Alignment"
+msgstr ""
+
+#: inc/theme-options.php:225
+msgid "Column3 Width (in px) - width + margin + borders + padding"
+msgstr ""
+
+#: inc/theme-options.php:241
+msgid "Column3 Margin"
+msgstr ""
+
+#: inc/theme-options.php:257
+msgid "Column1 Width (in px) - width + margin + borders + padding"
+msgstr ""
+
+#: inc/theme-options.php:273
+msgid "Column1 Margin"
+msgstr ""
+
+#: inc/theme-options.php:281
+msgid "Post Layout - Single View"
+msgstr ""
+
+#: inc/theme-options.php:296
+msgid "Change post structure"
+msgstr ""
+
+#: inc/theme-options.php:331
+msgid "Display post Navivigation top"
+msgstr ""
+
+#: inc/theme-options.php:347
+msgid "Display post Navivigation bottom"
+msgstr ""
+
+#: inc/theme-options.php:356
+msgid "Page Layout"
+msgstr ""
+
+#: inc/theme-options.php:371
+msgid "Change default page structure"
+msgstr ""
+
+#: inc/theme-options.php:406
+msgid "Display title of the page"
+msgstr ""
+
+#: inc/theme-options.php:415
+msgid "Image Page Layout"
+msgstr ""
+
+#: inc/theme-options.php:430
+msgid "Change default image page structure"
+msgstr ""
+
+#: inc/theme-options.php:449
+msgid "Default image page structure"
+msgstr ""
+
+#: inc/theme-options.php:458
+msgid "Main Design"
+msgstr ""
+
+#: inc/theme-options.php:473
+msgid "Change #main text-color"
+msgstr ""
+
+#: inc/theme-options.php:492
+msgid "#main Color"
+msgstr ""
+
+#: inc/theme-options.php:508
+msgid "Show #main background"
+msgstr ""
+
+#: inc/theme-options.php:527
+msgid "#main Background-Color"
+msgstr ""
+
+#: inc/theme-options.php:543
+msgid "Show #main border"
+msgstr ""
+
+#: inc/theme-options.php:562
+msgid "#main Border-Color"
+msgstr ""
+
+#: inc/theme-options.php:578
+msgid "Show #main shadow"
+msgstr ""
+
+#: inc/theme-options.php:595
+msgid "#main padding"
+msgstr ""
+
+#: inc/theme-options.php:603
+msgid "Content Design"
+msgstr ""
+
+#: inc/theme-options.php:618
+msgid "Show #content background"
+msgstr ""
+
+#: inc/theme-options.php:637
+msgid "#content Background-Color"
+msgstr ""
+
+#: inc/theme-options.php:653
+msgid "Show #content border"
+msgstr ""
+
+#: inc/theme-options.php:672
+msgid "#content Border-Color"
+msgstr ""
+
+#: inc/theme-options.php:688
+msgid "Show #content shadow"
+msgstr ""
+
+#: inc/theme-options.php:705
+msgid "#content padding"
+msgstr ""
+
+#: inc/theme-options.php:713
+msgid "Sidebar3 Design"
+msgstr ""
+
+#: inc/theme-options.php:728
+msgid "Show #sidebar3 background"
+msgstr ""
+
+#: inc/theme-options.php:747
+msgid "#sidebar3 Background-Color"
+msgstr ""
+
+#: inc/theme-options.php:763
+msgid "Show #sidebar3 border"
+msgstr ""
+
+#: inc/theme-options.php:782
+msgid "#sidebar3 Border-Color"
+msgstr ""
+
+#: inc/theme-options.php:798
+msgid "Show #sidebar3 shadow"
+msgstr ""
+
+#: inc/theme-options.php:815
+msgid "#sidebar3 padding"
+msgstr ""
+
+#: inc/theme-options.php:823
+msgid "Sidebar1 Design"
+msgstr ""
+
+#: inc/theme-options.php:838
+msgid "Show #sidebar1 background"
+msgstr ""
+
+#: inc/theme-options.php:857
+msgid "#sidebar1 Background-Color"
+msgstr ""
+
+#: inc/theme-options.php:873
+msgid "Show #sidebar1 border"
+msgstr ""
+
+#: inc/theme-options.php:892
+msgid "#sidebar1 Border-Color"
+msgstr ""
+
+#: inc/theme-options.php:908
+msgid "Show #sidebar1 shadow"
+msgstr ""
+
+#: inc/theme-options.php:925
+msgid "#sidebar1 padding"
+msgstr ""
+
+#: inc/theme-options.php:1144
+msgid "Customize"
+msgstr ""
+
+#: inc/customizer-controls/class-taxonomy_dropdown_custom_control.php:55
+#: inc/customizer-controls/class-textarea_custom_control.php:43
+#: inc/customizer-controls/class-user_select_custom_control.php:62
+msgid "Default"
+msgstr ""
+
+#: inc/customizer-controls/class-taxonomy_dropdown_custom_control.php:74
+msgid "None"
+msgstr ""
+
+#: inc/customizer-controls/class-user_select_custom_control.php:83
+msgid "No users found."
+msgstr ""

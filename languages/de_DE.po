@@ -1,0 +1,1049 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: NA-Basic 0.1\n"
+"POT-Creation-Date: 2013-03-19 12:03+0100\n"
+"PO-Revision-Date: 2013-03-19 12:07+0100\n"
+"Last-Translator: Marco Herzog <marco.herzog@gmail.com>\n"
+"Language-Team: \n"
+"Language: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;_x;_n:1,2;_n_noop:1,2;"
+"_nx:1,2;_nx_noop:1,2\n"
+"X-Poedit-Basepath: ../.\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:49
+msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr "Das ist aber peinlich, oder?"
+
+#: 404.php:50
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Es scheint als könnten wir nicht finden nach was Sie suchen. Vielleicht "
+"hilft Ihnen die Suche."
+
+#: 404.php:59
+msgid "You might have been looking for these posts"
+msgstr "Eventuell haben Sie nach diesen Beiträgen gesucht"
+
+#: archive.php:40 archive.php:41 archive.php:42 archive.php:47 archive.php:48
+#: archive.php:52
+#, php-format
+msgid "Go to archive for %s"
+msgstr "Öffne Archiv %s"
+
+#: archive.php:40
+msgid "d.F Y"
+msgstr ""
+
+#: archive.php:40 archive.php:43
+msgid "d"
+msgstr ""
+
+#: archive.php:41 archive.php:47
+msgid "F Y"
+msgstr ""
+
+#: archive.php:41 archive.php:47 archive.php:49
+msgid "F"
+msgstr ""
+
+#: archive.php:42 archive.php:48 archive.php:52 archive.php:53
+msgid "Y"
+msgstr ""
+
+#: archive.php:43
+#, php-format
+msgid "Archive for %1$s.%2$s %3$s"
+msgstr "Archive für %1$s.%2$s %3$s"
+
+#: archive.php:49
+#, php-format
+msgid "Archive for %1$s %2$s"
+msgstr "Archive für %1$s %2$s"
+
+#: archive.php:53
+#, php-format
+msgid "Archive for %1$s"
+msgstr "Archive für %1$s"
+
+#: archive.php:55
+msgid "Archives"
+msgstr "Archive"
+
+#: comments-popup.php:9
+#, php-format
+msgid "%1$s - Comments on %2$s"
+msgstr "%1$s - Kommentare zu %2$s"
+
+#: comments-popup.php:79
+msgid "Comments"
+msgstr "Kommentare"
+
+#: comments-popup.php:82
+msgid ""
+"<abbr title=\"Really Simple Syndication\">RSS</abbr> feed for comments on "
+"this post."
+msgstr ""
+"<abbr title=\"Really Simple Syndication\">RSS</abbr> feed für Kommentare zu "
+"diesem Post."
+
+#: comments-popup.php:84
+#, php-format
+msgid ""
+"The <abbr title=\"Universal Resource Locator\">URL</abbr> to TrackBack this "
+"entry is: <em>%s</em>"
+msgstr ""
+"Die <abbr title=\"Universal Resource Locator\">URL</abbr> zum TrackBack "
+"dieses Beitrags lautet: <em>%s</em>"
+
+#: comments-popup.php:109 functions.php:581
+msgid "Your comment is awaiting moderation."
+msgstr ""
+"Dein Kommentar muss vor Veröffentlichung vom Moderator freigegeben werden."
+
+#: comments-popup.php:120 comments-popup.php:135 functions.php:592
+#: functions.php:607
+msgid "Go to "
+msgstr "Gehe zu "
+
+#: comments-popup.php:128 functions.php:600
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s %2$s Uhr"
+
+#: comments-popup.php:133 functions.php:605
+msgid "Post author"
+msgstr "Beitragsauthor"
+
+#: comments-popup.php:153
+msgid "No comments yet."
+msgstr "Noch keine Kommentare bis jetzt."
+
+#: comments-popup.php:163
+msgid "Leave a comment"
+msgstr "Geben Sie einen Kommentar ab"
+
+#: comments-popup.php:167
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out &raquo;</a>"
+msgstr ""
+"Eingeloggt ale <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Abmelden"
+"\">Log out &raquo;</a>"
+
+#: comments-popup.php:170 comments-popup.php:171 functions.php:524
+#: functions.php:525
+msgid "Name"
+msgstr ""
+
+#: comments-popup.php:174 comments-popup.php:175 functions.php:528
+#: functions.php:529
+msgid "Email"
+msgstr "E-Mail"
+
+#: comments-popup.php:176 functions.php:530
+msgid "Your email address will not be published."
+msgstr "Deine E-Mail-Adresse wird nicht veröffentlicht."
+
+#: comments-popup.php:179 comments-popup.php:180 functions.php:533
+#: functions.php:534
+msgid "Website"
+msgstr ""
+
+#: comments-popup.php:188 functions.php:548
+#, php-format
+msgid ""
+"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
+"and attributes: %s"
+msgstr ""
+"Sie können <abbr title=\"Hyper Text Markup Language\">HTML</abbr>-Tags und "
+"folgende Attribute verwenden: %s"
+
+#: comments-popup.php:199
+msgid "Sorry, the comment form is closed at this time."
+msgstr "Die Kommentarfunktion ist geschlossen."
+
+#: comments-popup.php:206
+msgid "Close this window."
+msgstr "Fenster schliessen."
+
+#: comments-popup.php:212
+msgid "Sorry, no posts matched your criteria."
+msgstr "Keine Beiträge stimmen mit deinen Suchkriterien überein."
+
+#: comments.php:33
+#, php-format
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Ein Kommentar zu &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s Kommentare zu &ldquo;%2$s&rdquo;"
+
+#: comments.php:44 comments.php:52
+msgid "Comment navigation"
+msgstr "Kommentar-Navigation"
+
+#: comments.php:46
+msgid "&larr; Older Comments"
+msgstr "&larr; Ältere Kommentare"
+
+#: comments.php:47
+msgid "Newer Comments &rarr;"
+msgstr "Neuere Kommentare &rarr;"
+
+#: comments.php:67
+msgid "Comments are closed."
+msgstr "Kommentarfunkton ist geschlossen."
+
+#: content-aside.php:30 content-galerie___.php:29 content-galerie___.php:106
+#: content-gallery.php:29 content-gallery.php:106 content-image.php:29
+#: content-image.php:57 content-link.php:29 content-link.php:75
+#: content-post-highlight-first.php:36 content-post-highlight.php:46
+#: content-quote.php:30 content-quote.php:58 content.php:25 content.php:71
+msgid "featured"
+msgstr ""
+
+#: content-aside.php:49 functions.php:626
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: content-aside.php:71 content-link.php:102
+msgid "Leave a reply"
+msgstr "Antworte jetzt"
+
+#: content-aside.php:71 content-link.php:102
+msgid "1 Reply"
+msgstr "1 Antwort"
+
+#: content-aside.php:71 content-link.php:102
+msgid "% Replies"
+msgstr "% Antworten"
+
+#: content-aside.php:76 content-galerie___.php:187 content-gallery.php:187
+#: content-image.php:106 content-link.php:107 content-page.php:20
+#: content-quote.php:89 content-status.php:46 content.php:98
+msgid "edit"
+msgstr "bearbeiten"
+
+#: content-galerie___.php:118 content-gallery.php:118 content-image.php:69
+#: content-link.php:87 content-page.php:15 content-quote.php:70 content.php:83
+#: image.php:127 inc/enhanced-link-pages.php:15
+msgid "Pages:"
+msgstr "Seiten:"
+
+#: content-galerie___.php:127 content-gallery.php:127
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Weiter lesen <span class=\"meta-nav\">&rarr;</span>"
+
+#: content-link.php:73
+msgid "Link: "
+msgstr ""
+
+#: content-none.php:10
+msgid "Nothing Found &nbsp;&nbsp;&nbsp; :-("
+msgstr "Leider wurde nichts gefunden &nbsp;&nbsp;&nbsp; :-("
+
+#: content-none.php:14
+msgid ""
+"Apologies, but no results were found. Perhaps searching will help find a "
+"related post."
+msgstr ""
+"Es wurden keine Ergebnisse gefunden. Vielleicht finden Sie den "
+"entsprechenden Beitrag über die Suche."
+
+#: functions.php:85
+msgid "Main Menu"
+msgstr "Hauptmenü"
+
+#: functions.php:86
+#, fuzzy
+msgid "Main Content Menu"
+msgstr "Hauptmenü"
+
+#: functions.php:87
+msgid "Top Menu"
+msgstr ""
+
+#: functions.php:182
+#, fuzzy, php-format
+msgid "Page %s"
+msgstr "Seiten:"
+
+#: functions.php:197
+#, fuzzy
+msgid "Sidebar3"
+msgstr "Haupt-Seitenleiste"
+
+#: functions.php:199
+msgid "Sidebar3 for displaying aside content"
+msgstr "Servicespalte3 zur Darstellung von Zusatzinformationen"
+
+#: functions.php:206
+#, fuzzy
+msgid "Sidebar1"
+msgstr "Haupt-Seitenleiste"
+
+#: functions.php:208
+msgid "Sidebar1 for displaying pre-content like a navigation"
+msgstr ""
+"Servicespalte1 zur Darstellung von übergeordneten Inhalten (zB: Navigation)"
+
+#: functions.php:215
+msgid "Footer1"
+msgstr ""
+
+#: functions.php:217 functions.php:226 functions.php:235 functions.php:244
+msgid ""
+"Footer area for displaying content and footer navigations below the content "
+"area."
+msgstr ""
+"Fußzeile zum Darstellen von Zusatzinhalten oder Navigationselementen unter "
+"dem Inhalt."
+
+#: functions.php:224
+msgid "Footer2"
+msgstr ""
+
+#: functions.php:233
+msgid "Footer3"
+msgstr ""
+
+#: functions.php:242
+msgid "Footer4"
+msgstr ""
+
+#: functions.php:251
+msgid "Copyright"
+msgstr ""
+
+#: functions.php:253
+msgid "Area for showing copyright hint. Placed below site footer."
+msgstr "Raum zB für den Copyright-Hinweis. Platziert am Seitenende."
+
+#: functions.php:301 functions.php:315 functions.php:338
+msgid "more..."
+msgstr "mehr..."
+
+#: functions.php:349 functions.php:366 single.php:48 single.php:65
+msgid "Post navigation"
+msgstr "Beitragsnavigation"
+
+#: functions.php:351
+msgid "<span class=\"meta-nav\">&lt;&lt;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&lt;&lt;</span> Ältere Beitrage"
+
+#: functions.php:352
+msgid "Newer posts <span class=\"meta-nav\">&gt;&gt;</span>"
+msgstr "Neuere Beiträge <span class=\"meta-nav\">&gt;&gt;</span>"
+
+#: functions.php:368 functions.php:375
+msgid "<span class=\"meta-nav\">&gt;&gt;</span>"
+msgstr ""
+
+#: functions.php:369 functions.php:372
+msgid "<span class=\"meta-nav\">&lt;&lt;</span>"
+msgstr ""
+
+#: functions.php:546 functions.php:547
+msgid "Comment"
+msgstr "Kommentar"
+
+#: functions.php:568
+msgid "Pingback:"
+msgstr ""
+
+#: functions.php:569
+msgid "(Edit)"
+msgstr "(bearbeiten)"
+
+#: functions.php:619
+msgid "Permalink"
+msgstr ""
+
+#: functions.php:623
+msgid "Go to permalink"
+msgstr "Permalink öffnen"
+
+#: functions.php:628
+msgid "Reply"
+msgstr "antworten"
+
+#: functions.php:671
+msgid ""
+"This post is password protected. To view it please enter your password below."
+msgstr ""
+"Dieser Beitrag ist passwortgeschützt. Geben Sie bitte das Passwort ein, um "
+"den Beitrag anzuzeigen."
+
+#: functions.php:674 functions.php:675
+msgid "Password"
+msgstr "Passwort"
+
+#: functions.php:676
+msgid "Go!"
+msgstr "Los!"
+
+#: functions.php:733
+msgid "Release Date"
+msgstr "Veröffentlichungsdatum"
+
+#: functions.php:739
+msgid "Author"
+msgstr "Autor"
+
+#: functions.php:741
+#, php-format
+msgid "View all posts by %s"
+msgstr "Alle Artikel von %s anzeigen"
+
+#: functions.php:746 inc/na_events/na_events.php:54
+msgid "Category"
+msgstr "Kategorie"
+
+#: functions.php:746
+msgid ", "
+msgstr ""
+
+#: functions.php:749
+msgid "Tags"
+msgstr "Schlagworte"
+
+#: functions.php:753
+#, php-format
+msgid ""
+"This entry was posted in %1$s and tagged %2$s on %3$s<span class=\"by-author"
+"\"> by %4$s</span>."
+msgstr ""
+
+#: functions.php:755
+#, php-format
+msgid ""
+"This entry was posted in %1$s on %3$s<span class=\"by-author\"> by %4$s</"
+"span>."
+msgstr ""
+
+#: functions.php:757
+#, php-format
+msgid "This entry was posted on %3$s<span class=\"by-author\"> by %4$s</span>."
+msgstr ""
+
+#: functions.php:772
+msgid "Bookmark"
+msgstr "Lesezeichen"
+
+#: header.php:99
+msgid "Site-Menu"
+msgstr "Site-Menü"
+
+#: header.php:100
+msgid "Skip to content"
+msgstr "Direkt zum Inhalt"
+
+#: header.php:115
+msgid "Main-Menu"
+msgstr "Hauptmenü"
+
+#: header.php:117
+msgid "Scroll to top"
+msgstr "Nach oben scrollen"
+
+#: header.php:155
+#, fuzzy
+msgid "Main-Content-Menu"
+msgstr "Hauptmenü"
+
+#: home.php:97
+msgid "Further articles in this category"
+msgstr "Weitere Artikel in dieser Kategorie"
+
+#: image.php:45
+#, php-format
+msgid ""
+"<nav><a href=\"%2$s\" title=\"Back to the post %1$s\"><i class=\"icon-arrow-"
+"left\"></i> Back to the post \"%3$s\"</a></nav>"
+msgstr ""
+"<nav><a href=\"%2$s\" title=\"Zurück zum Beitrag %1$s\"><i class=\"icon-"
+"arrow-left\"></i> Zurück zum Beitrag \"%3$s\"</a></nav>"
+
+#: image.php:53
+msgid "&larr; Previous"
+msgstr "&larr; Zurück"
+
+#: image.php:54
+msgid "Next &rarr;"
+msgstr "Weiter &rarr;"
+
+#: image.php:95
+#, php-format
+msgid ""
+"<a href=\"%1$s\" title=\"Edit image %2$s\" class=\"edit-link\"><i class="
+"\"icon-pencil\"></i></a>"
+msgstr ""
+"<a href=\"%1$s\" title=\"Bild %2$s bearbeiten\" class=\"edit-link\"><i class="
+"\"icon-pencil\"></i></a>"
+
+#: image.php:100
+#, php-format
+msgid ""
+"<a href=\"%1$s\" target=\"_blank\" title=\"Full-size image %2$s - %3$s x %4$s"
+"\" class=\"edit-link\"><i class=\"icon-download-alt\"></i></a>"
+msgstr ""
+"<a href=\"%1$s\" target=\"_blank\" title=\"Bild %2$s in volley Auflösung- "
+"%3$s x %4$s\" class=\"edit-link\"><i class=\"icon-download-alt\"></i></a>"
+
+#: image.php:115
+#, php-format
+msgid "<time datetime=\"%1$s\">%2$s</time>"
+msgstr ""
+
+#: search.php:33 searchform.php:6
+msgid "Search"
+msgstr "Suche"
+
+#: search.php:60
+msgid "Sorry, but you are looking for something that isn't here."
+msgstr "Entschuldigen Sie, was Sie suchen ist leider nicht da."
+
+#: single.php:50 single.php:67
+msgid "&larr;"
+msgstr ""
+
+#: single.php:51 single.php:68
+msgid "&rarr;"
+msgstr ""
+
+#: single.php:106
+msgid "Related posts"
+msgstr "Verwandte Artikel"
+
+#: inc/breadcrumbs.php:11
+msgid "HOME"
+msgstr ""
+
+#: inc/breadcrumbs.php:12
+#, fuzzy
+msgid "Archive by Category "
+msgstr "Archive für %1$s"
+
+#: inc/breadcrumbs.php:13
+msgid "Search results for "
+msgstr "Scuhergebnisse für "
+
+#: inc/breadcrumbs.php:14
+msgid "Posts tagged with "
+msgstr "Artikel markiert mit "
+
+#: inc/breadcrumbs.php:15
+msgid "Articles postet by "
+msgstr "Artikel veröffentlicht von "
+
+#: inc/breadcrumbs.php:16
+msgid "Error 404"
+msgstr "Fehler 404"
+
+#: inc/breadcrumbs.php:46
+#, fuzzy
+msgid "Page"
+msgstr "Seiten:"
+
+#: inc/enhanced-link-pages.php:15
+msgid "Next page"
+msgstr "Nächste Seite"
+
+#: inc/enhanced-link-pages.php:16
+msgid "Previous page"
+msgstr "Vorherige Seite"
+
+#: inc/theme-options.php:41
+msgid "Show description"
+msgstr "Beschreibung anzeigen"
+
+#: inc/theme-options.php:60
+msgid "Logo"
+msgstr "Logo"
+
+#: inc/theme-options.php:81
+msgid "Text Color"
+msgstr "Textfarbe"
+
+#: inc/theme-options.php:103
+msgid "Link Color"
+msgstr "Linkfarbe"
+
+#: inc/theme-options.php:119
+msgid "Underline links"
+msgstr "Links unterstreichen"
+
+#: inc/theme-options.php:138
+#, fuzzy
+msgid "Link Color hover/focus"
+msgstr "Linkfarbe"
+
+#: inc/theme-options.php:154
+msgid "Underline links on hover/focus"
+msgstr "Links unterstreichen bei hover/focus"
+
+#: inc/theme-options.php:175
+msgid "Background as Cover"
+msgstr "Hintergrund als Cover anzeigen"
+
+#: inc/theme-options.php:193
+msgid "Keep main-Menu on top"
+msgstr "main-Menü oben halten"
+
+#: inc/theme-options.php:209
+msgid "Show breadcrumbs"
+msgstr "Breadcrumbs anzeigen"
+
+#: inc/theme-options.php:225
+msgid "Show pagination for comments"
+msgstr "Seitennummerierung für Kommentare"
+
+#: inc/theme-options.php:236
+msgid "Theme Layout"
+msgstr "Theme Layout"
+
+#: inc/theme-options.php:239 inc/theme-options.php:451
+#: inc/theme-options.php:606 inc/theme-options.php:665
+#: inc/theme-options.php:708 inc/theme-options.php:853
+#: inc/theme-options.php:963 inc/theme-options.php:1073
+msgid "Allows you to define the default theme layout."
+msgstr "Hier kann das Standard-Theme-Layout festgelegt werden."
+
+#: inc/theme-options.php:254 inc/theme-options.php:482
+#: inc/theme-options.php:637
+msgid "Default Structure"
+msgstr "Standardstruktur"
+
+#: inc/theme-options.php:271
+msgid "Width"
+msgstr "Breite"
+
+#: inc/theme-options.php:287
+msgid "Maximum Width"
+msgstr "Maximale Breite"
+
+#: inc/theme-options.php:302
+msgid "Page Alignment"
+msgstr "Ausrichtung Website"
+
+#: inc/theme-options.php:324
+msgid "#sidebar3 Width (in px) - width + margin + borders + padding"
+msgstr "#sidebar3 Breite (in px) - Breite + Außen- und Innenabstand + Rahmen"
+
+#: inc/theme-options.php:340
+msgid "#sidebar3 Margin"
+msgstr "#sidebar3 Außenabstand"
+
+#: inc/theme-options.php:356
+msgid "#sidebar1 Width (in px) - width + margin + borders + padding"
+msgstr "#sidebar1 Breite (in px) - Breite + Außen- und Innenabstand + Rahmen"
+
+#: inc/theme-options.php:372
+msgid "#sidebar1 Margin"
+msgstr "#sidebar1 Außenabstand"
+
+#: inc/theme-options.php:380
+#, fuzzy
+msgid "Blog Layout"
+msgstr "Seiten-Layout"
+
+#: inc/theme-options.php:383
+#, fuzzy
+msgid "Allows you to define the default blog layout."
+msgstr "Hier kann das Standard-Theme-Layout festgelegt werden."
+
+#: inc/theme-options.php:395
+#, fuzzy
+msgid "Sort articles by category"
+msgstr "Archive für %1$s"
+
+#: inc/theme-options.php:411
+msgid "Number of featured posts"
+msgstr "Anzahl hervorgehobener Artikel"
+
+#: inc/theme-options.php:439
+#, fuzzy
+msgid "Show pagination on blog-page (index)"
+msgstr "Seitennummerierung für index-Seite anzeigen"
+
+#: inc/theme-options.php:448
+msgid "Post Layout - Single View"
+msgstr "Beitrags-Layout (Einzelansicht)"
+
+#: inc/theme-options.php:463
+msgid "Change post structure"
+msgstr "Beitragsstruktur anpassen"
+
+#: inc/theme-options.php:498
+msgid "Display post Navivigation top"
+msgstr "Beitragsnavigation (oben) anzeigen"
+
+#: inc/theme-options.php:514
+msgid "Display post Navivigation bottom"
+msgstr "Beitragsnavigation (unten) anzeigen"
+
+#: inc/theme-options.php:530
+#, fuzzy
+msgid "Display post date"
+msgstr "Beitragsnavigation (oben) anzeigen"
+
+#: inc/theme-options.php:546
+#, fuzzy
+msgid "Display post author"
+msgstr "Beitragsnavigation (oben) anzeigen"
+
+#: inc/theme-options.php:562
+#, fuzzy
+msgid "Display post categories"
+msgstr "Populäre Kategorien"
+
+#: inc/theme-options.php:578
+#, fuzzy
+msgid "Display post tags"
+msgstr "Beitragsnavigation (oben) anzeigen"
+
+#: inc/theme-options.php:594
+#, fuzzy
+msgid "Display post bookmark"
+msgstr "Beitragsnavigation (unten) anzeigen"
+
+#: inc/theme-options.php:603
+msgid "Page Layout"
+msgstr "Seiten-Layout"
+
+#: inc/theme-options.php:618
+msgid "Change default page structure"
+msgstr "Standard-Seitenstruktur anpassen"
+
+#: inc/theme-options.php:653
+msgid "Display title of the page"
+msgstr "Seitentitel anzeigen"
+
+#: inc/theme-options.php:662
+msgid "Image Page Layout"
+msgstr "Layout der Bild-Seite"
+
+#: inc/theme-options.php:677
+msgid "Change default image page structure"
+msgstr "Standardstruktur der Bild-Seite anpassen"
+
+#: inc/theme-options.php:696
+msgid "Default image page structure"
+msgstr "Standardstruktur der Bild-Seite"
+
+#: inc/theme-options.php:705
+msgid "#main Design"
+msgstr "#main Design"
+
+#: inc/theme-options.php:720
+msgid "Change #main text-color"
+msgstr "#main Textfarbe anpassen"
+
+#: inc/theme-options.php:739
+msgid "#main Color"
+msgstr "#main Textfarbe"
+
+#: inc/theme-options.php:755
+msgid "Show #main background"
+msgstr "#main Hintergrund anzeigen"
+
+#: inc/theme-options.php:774
+msgid "#main Background-Color"
+msgstr "#main Hintergrund-Farbe"
+
+#: inc/theme-options.php:790
+msgid "Show #main border"
+msgstr "#main Rahmen anzeigen"
+
+#: inc/theme-options.php:809
+msgid "#main Border-Color"
+msgstr "#main Rahmen-Farbe"
+
+#: inc/theme-options.php:825
+msgid "Show #main shadow"
+msgstr "#main Schatten anzeigen"
+
+#: inc/theme-options.php:842
+msgid "#main padding"
+msgstr "#main Innenabstand"
+
+#: inc/theme-options.php:850
+msgid "#content Design"
+msgstr "#content Design"
+
+#: inc/theme-options.php:865
+msgid "Show #content background"
+msgstr "#content Hintergrund anzeigen"
+
+#: inc/theme-options.php:884
+msgid "#content Background-Color"
+msgstr "#content Hintergrund-Farbe"
+
+#: inc/theme-options.php:900
+msgid "Show #content border"
+msgstr "#content Rahmen anzeigen"
+
+#: inc/theme-options.php:919
+msgid "#content Border-Color"
+msgstr "#content Rahmen-Farbe"
+
+#: inc/theme-options.php:935
+msgid "Show #content shadow"
+msgstr "#content Schatten anzeigen"
+
+#: inc/theme-options.php:952
+msgid "#content padding"
+msgstr "#content Innenabstand"
+
+#: inc/theme-options.php:960
+msgid "#sidebar3 Design"
+msgstr "#sidebar3 Design"
+
+#: inc/theme-options.php:975
+msgid "Show #sidebar3 background"
+msgstr "#sidebar3 Hintergrund anzeigen"
+
+#: inc/theme-options.php:994
+msgid "#sidebar3 Background-Color"
+msgstr "#sidebar3 Hintergrund-Farbe"
+
+#: inc/theme-options.php:1010
+msgid "Show #sidebar3 border"
+msgstr "#sidebar3 Rahmen anzeigend"
+
+#: inc/theme-options.php:1029
+msgid "#sidebar3 Border-Color"
+msgstr "#sidebar3 Rahmen-Farbe"
+
+#: inc/theme-options.php:1045
+msgid "Show #sidebar3 shadow"
+msgstr "#sidebar3 shadow anzeigen"
+
+#: inc/theme-options.php:1062
+msgid "#sidebar3 padding"
+msgstr "#sidebar3 Innenabstand"
+
+#: inc/theme-options.php:1070
+msgid "#sidebar1 Design"
+msgstr "#sidebar1 Design"
+
+#: inc/theme-options.php:1085
+msgid "Show #sidebar1 background"
+msgstr "#sidebar1 background anzeigen"
+
+#: inc/theme-options.php:1104
+msgid "#sidebar1 Background-Color"
+msgstr "#sidebar1 Hintergrund-Farbe"
+
+#: inc/theme-options.php:1120
+msgid "Show #sidebar1 border"
+msgstr "#sidebar1 border anzeigen"
+
+#: inc/theme-options.php:1139
+msgid "#sidebar1 Border-Color"
+msgstr "#sidebar1 Rahmen-Farbe"
+
+#: inc/theme-options.php:1155
+msgid "Show #sidebar1 shadow"
+msgstr "#sidebar1 shadow anzeigen"
+
+#: inc/theme-options.php:1172
+msgid "#sidebar1 padding"
+msgstr "#sidebar1 Innenabstand"
+
+#: inc/theme-options.php:1182
+msgid "Custom Post Types"
+msgstr "Eigene Artikel Typen"
+
+#: inc/theme-options.php:1185
+msgid "Allows you to activate custom post types."
+msgstr "Hier können Sie eigene Artikeltypen aktivieren."
+
+#: inc/theme-options.php:1197
+msgid "Activate events"
+msgstr "Events aktivieren"
+
+#: inc/theme-options.php:1429
+msgid "Customize"
+msgstr "Anpassen"
+
+#: inc/customizer-controls/class-taxonomy_dropdown_custom_control.php:55
+#: inc/customizer-controls/class-textarea_custom_control.php:43
+#: inc/customizer-controls/class-user_select_custom_control.php:62
+msgid "Default"
+msgstr "Standard"
+
+#: inc/customizer-controls/class-taxonomy_dropdown_custom_control.php:74
+#: inc/na_events/na_events.php:110
+msgid "None"
+msgstr "Leer"
+
+#: inc/customizer-controls/class-user_select_custom_control.php:83
+msgid "No users found."
+msgstr "Es wurden keine Benutzer gefunden."
+
+#: inc/na_events/na_events.php:17 inc/na_events/na_events.php:31
+msgid "Events"
+msgstr ""
+
+#: inc/na_events/na_events.php:18
+msgid "Event"
+msgstr ""
+
+#: inc/na_events/na_events.php:19
+msgid "Add New"
+msgstr "Hinzufügen"
+
+#: inc/na_events/na_events.php:20
+msgid "Add New Event"
+msgstr "Neues Event hinzufügen"
+
+#: inc/na_events/na_events.php:21
+msgid "Edit Event"
+msgstr "Event bearbeiten"
+
+#: inc/na_events/na_events.php:22
+msgid "New Event"
+msgstr "Neues Event"
+
+#: inc/na_events/na_events.php:23
+msgid "View Event"
+msgstr "Event anzeigen"
+
+#: inc/na_events/na_events.php:24
+#, fuzzy
+msgid "Search Events"
+msgstr "Suche"
+
+#: inc/na_events/na_events.php:25
+#, fuzzy
+msgid "No events found"
+msgstr "Es wurden keine Benutzer gefunden."
+
+#: inc/na_events/na_events.php:26
+msgid "No events found in Trash"
+msgstr "Keine Events im Papierkorb gefunden"
+
+#: inc/na_events/na_events.php:53
+msgid "Categories"
+msgstr "Kategorien"
+
+#: inc/na_events/na_events.php:55
+msgid "Search Categories"
+msgstr "Kategorien durchsuchen"
+
+#: inc/na_events/na_events.php:56
+msgid "Popular Categories"
+msgstr "Populäre Kategorien"
+
+#: inc/na_events/na_events.php:57
+msgid "All Categories"
+msgstr "Alle Kategorien"
+
+#: inc/na_events/na_events.php:60
+msgid "Edit Category"
+msgstr "Kategorien bearbeiten"
+
+#: inc/na_events/na_events.php:61
+msgid "Update Category"
+msgstr "Kategorien aktualisieren"
+
+#: inc/na_events/na_events.php:62
+msgid "Add New Category"
+msgstr "Neue Kategorie hinzufügen"
+
+#: inc/na_events/na_events.php:63
+msgid "New Category Name"
+msgstr "Neuer Kategoriename"
+
+#: inc/na_events/na_events.php:64
+msgid "Separate categories with commas"
+msgstr "Kategorien durch Kommas trennen"
+
+#: inc/na_events/na_events.php:65
+msgid "Add or remove categories"
+msgstr "Kategorien hinzufügen/entfernen"
+
+#: inc/na_events/na_events.php:66
+msgid "Choose from the most used categories"
+msgstr "Aus den meistbenutzten Kategorien wählen"
+
+#: inc/na_events/na_events.php:70
+msgid "Event Category"
+msgstr "Eventkategorien"
+
+#: inc/na_events/na_events.php:232
+#, php-format
+msgid "Event updated. <a href=\"%s\">View item</a>"
+msgstr "Event aktualisiert. <a href=\"%s\">Jetzt anzeigen</a>"
+
+#: inc/na_events/na_events.php:233
+msgid "Custom field updated."
+msgstr "Benutzerdefiniertes Feld aktualisiert."
+
+#: inc/na_events/na_events.php:234
+msgid "Custom field deleted."
+msgstr "Benutzerdefiniertes Feld gelöscht."
+
+#: inc/na_events/na_events.php:235
+msgid "Event updated."
+msgstr "Event aktualisiert."
+
+#: inc/na_events/na_events.php:237
+#, php-format
+msgid "Event restored to revision from %s"
+msgstr "Event wiederhergestellt zur Version vom %s"
+
+#: inc/na_events/na_events.php:238
+#, php-format
+msgid "Event published. <a href=\"%s\">View event</a>"
+msgstr "Event veröffentlicht. <a href=\"%s\">Jetzt anzeigen</a>"
+
+#: inc/na_events/na_events.php:239
+msgid "Event saved."
+msgstr "Event gespeichert."
+
+#: inc/na_events/na_events.php:240
+#, php-format
+msgid "Event submitted. <a target=\"_blank\" href=\"%s\">Preview event</a>"
+msgstr ""
+"Event gespeichert. <a target=\"_blank\" href=\"%s\">Vorschau ansehen</a>"
+
+#: inc/na_events/na_events.php:241
+#, php-format
+msgid ""
+"Event scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s"
+"\">Preview event</a>"
+msgstr ""
+"Event geplant für: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s"
+"\">Vorschau ansehen</a>"
+
+#: inc/na_events/na_events.php:243
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: inc/na_events/na_events.php:244
+#, php-format
+msgid "Event draft updated. <a target=\"_blank\" href=\"%s\">Preview event</a>"
+msgstr ""
+"Evententwurf aktualisiert. <a target=\"_blank\" href=\"%s\">Vorschau "
+"ansehen</a>"
+
+#: inc/na_events/na_events_ical.php:19 inc/na_events/na_events_ical.php:21
+msgid " - Events"
+msgstr ""
+
+#~ msgid "Permalink to %s"
+#~ msgstr "Permalink zu %s"
+
+#~ msgid "Left Sidebar"
+#~ msgstr "Linke Seitenleiste"
