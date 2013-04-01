@@ -45,9 +45,6 @@
                       $wp_query->query_vars['na_postcount'] = $postcount;
                       get_template_part( 'content', get_post_format() );
                       ?>
-                    <!--
-                    <?php trackback_rdf(); ?>
-                    -->
                 
                   <?php endwhile; ?>
                 

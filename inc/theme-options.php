@@ -511,6 +511,45 @@ class nabasic_Customize
             'priority' => 2, //Determines the order this control appears in for the specified section
       ));
       
+      $wp_customize->add_setting( 'display_further_category_posts_horizontal', //Give it a SERIALIZED name (so all theme settings can live under one db record)
+         array(
+            'default' => false, //Default setting/value to save
+            'type' => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
+            'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
+            'transport' => 'refresh', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
+         ) 
+      );      
+      $wp_customize->add_control( 'nabasic_display_further_category_posts_horizontal', array(
+            'label' => __( 'Display further pots in category horizontally', 'nabasic' ), //Admin-visible name of the control
+            'section' => 'blog_layout', //ID of the section this control should render in (can be one of yours, or a WordPress default section)
+            'settings' => 'display_further_category_posts_horizontal', //Which setting to load and manipulate (serialized is okay)
+            'priority' => 4, //Determines the order this control appears in for the specified section
+            'type' => 'checkbox',
+      ));
+      
+      $wp_customize->add_setting( 'number_of_cat_posts', //Give it a SERIALIZED name (so all theme settings can live under one db record)
+         array(
+            'default' => '4', // %% - Returns a percent sign >> http://www.w3schools.com/php/func_string_printf.asp
+            'type' => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
+            'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
+            'transport' => 'refresh', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
+         ) 
+      );      
+      $wp_customize->add_control( 'nabasic_number_of_cat_posts', array(
+            'label' => __( 'Number of further category posts', 'nabasic' ), //Admin-visible name of the control
+            'section' => 'blog_layout', //ID of the section this control should render in (can be one of yours, or a WordPress default section)
+            'settings' => 'number_of_cat_posts', //Which setting to load and manipulate (serialized is okay)
+            'priority' => 5, //Determines the order this control appears in for the specified section
+            'type' => 'select',
+            'choices' => array(
+                '0'   => '0',
+                '1'   => '1',
+                '2'   => '2',
+                '3'   => '3',
+                '4'   => '4',
+            ),
+      ));
+      
       $wp_customize->add_setting( 'default_amount_of_featured_posts', //Give it a SERIALIZED name (so all theme settings can live under one db record)
          array(
             'default' => '3', // %% - Returns a percent sign >> http://www.w3schools.com/php/func_string_printf.asp
@@ -523,7 +562,7 @@ class nabasic_Customize
             'label' => __( 'Number of featured posts', 'nabasic' ), //Admin-visible name of the control
             'section' => 'blog_layout', //ID of the section this control should render in (can be one of yours, or a WordPress default section)
             'settings' => 'default_amount_of_featured_posts', //Which setting to load and manipulate (serialized is okay)
-            'priority' => 5, //Determines the order this control appears in for the specified section
+            'priority' => 15, //Determines the order this control appears in for the specified section
             'type' => 'select',
             'choices' => array(
                 '0'   => '0',

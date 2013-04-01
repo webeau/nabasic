@@ -106,6 +106,16 @@ register_nav_menus(array(
   'top-menu' => __( 'Top Menu', 'nabasic' )
 ));
 
+/** Add FAVICON to head
+ * @link http://codex.wordpress.org/Child_Themes#Using_functions.php
+ */
+if ( ! function_exists( 'favicon_link' ) ) {
+  function favicon_link() {
+    echo '<link rel="shortcut icon" type="image/x-icon" href="'.get_stylesheet_directory_uri().'/img/favicon.ico" />' . "\n";
+    echo '<link rel="apple-touch-icon" href="'.get_stylesheet_directory_uri().'/img/apple-touch-icon.png" />' . "\n";
+  }
+  add_action( 'wp_head', 'favicon_link' );
+}
 /* --------------- CUSTOM END --------------- */
 
 }

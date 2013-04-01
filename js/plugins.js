@@ -55,10 +55,10 @@ function scrollto_defaults() {
     }
   });
   $('#scrollTo-Top').click(function(){
-    $.scrollTo('header#masthead',2000, {easing:'easeOutElastic'});
+    $.scrollTo('header#masthead',2000, {easing:'easeOutExpo'});
   })
   $('#scrollTo-Content').click(function(){
-    $.scrollTo('#main',2000, {easing:'easeOutElastic'});
+    $.scrollTo('#main',2000, {easing:'easeOutExpo'});
   })
   $('body.single-attachment').scrollTo('#main');
 };

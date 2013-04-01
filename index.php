@@ -81,9 +81,6 @@
                       } else {
                         get_template_part( 'content', get_post_format() );
                       } ?>
-                    <!--
-                    <?php trackback_rdf(); ?>
-                    -->
 
                   <?php endwhile; ?>
                 

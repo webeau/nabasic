@@ -122,7 +122,7 @@
                         
                         $my_query = new wp_query( $args );
                         if ( $my_query->have_posts() ) : 
-                          echo '<aside class="relatedposts"><h3>'.__('Related posts','nabasic').'</h3><ul>';
+                          echo '<aside class="widget relatedposts"><h3>'.__('Related posts','nabasic').'</h3><ul>';
                           while( $my_query->have_posts() ) {
                             $my_query->the_post();
                             ?>

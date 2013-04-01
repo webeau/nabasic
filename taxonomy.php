@@ -60,9 +60,6 @@ $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' 
                       } else {
                         get_template_part( 'content', get_post_format() );
                       } ?>
-                    <!--
-                    <?php trackback_rdf(); ?>
-                    -->
                 
                   <?php endwhile; ?>
                 
