@@ -96,7 +96,6 @@ function image_crop_dimensions($default, $orig_w, $orig_h, $new_w, $new_h, $crop
 }
 add_filter('image_resize_dimensions', 'image_crop_dimensions', 10, 6);
 
-
 /** Navigation MENUS
  * @link https://codex.wordpress.org/Navigation_Menus
  */
@@ -106,15 +105,77 @@ register_nav_menus(array(
   'top-menu' => __( 'Top Menu', 'nabasic' )
 ));
 
-/** Add FAVICON to head
- * @link http://codex.wordpress.org/Child_Themes#Using_functions.php
+/**
+ * Creates a nicely formatted and more specific title element text
+ * for output in head of document, based on current view.
+ *
+ * >> Twenty Twelve 1.0
+ *
+ * @param string $title Default title text for current view.
+ * @param string $sep Optional separator.
+ * @return string Filtered title.
  */
-if ( ! function_exists( 'favicon_link' ) ) {
-  function favicon_link() {
+function nabasic_wp_title( $title, $sep ) {
+  global $paged, $page;
+
+  if ( is_feed() )
+    return $title;
+
+  // Add the site name.
+  $title .= get_bloginfo( 'name' );
+
+  // Add the site description for the home/front page.
+  $site_description = get_bloginfo( 'description', 'display' );
+  if ( $site_description && ( is_home() || is_front_page() ) )
+    $title = "$title $sep $site_description";
+
+  // Add a page number if necessary.
+  if ( $paged >= 2 || $page >= 2 )
+    $title = "$title $sep " . sprintf( __( 'Page %s', 'nabasic' ), max( $paged, $page ) );
+
+  return $title;
+}
+add_filter( 'wp_title', 'nabasic_wp_title', 10, 2 );
+
+/** setup HTML >> HEAD
+ */
+if ( ! function_exists( 'setup_head' ) ) {
+  function setup_head() {
+    /** Add FAVICON to head
+     */
     echo '<link rel="shortcut icon" type="image/x-icon" href="'.get_stylesheet_directory_uri().'/img/favicon.ico" />' . "\n";
     echo '<link rel="apple-touch-icon" href="'.get_stylesheet_directory_uri().'/img/apple-touch-icon.png" />' . "\n";
+
+    /** SEO
+     * @link http://wordpress.org/support/topic/anyway-to-add-meta-description-to-post-without-plugin?replies=10#post-2164231
+     */
+    if (is_single() || is_page() ) : if ( have_posts() ) : while ( have_posts() ) : the_post(); 
+      echo '<meta name="description" content="'.esc_attr(na_the_excerpt('15',false)).'" />' . "\n";
+    endwhile; endif; elseif(is_home()) : 
+      echo '<meta name="description" content="'.bloginfo('description').'" />' . "\n";
+    endif; 
+
+    $posttags = get_the_tags();
+    if ($posttags) {
+      echo '<meta name="keywords" content="';
+      foreach($posttags as $tag) {
+        echo $tag->name . ' ';
+      }
+      echo '">' . "\n";
+    }
+
+    if(is_category() || is_search() || is_archive() || is_tag()) :
+      echo '<meta name="robots" content="noindex, follow">' . "\n";
+    else : 
+      echo '<meta name="robots" content="index, follow">' . "\n";
+    endif;
+    
+    echo '<meta name="viewport" content="width=device-width, initial-scale=1.0">' . "\n";
+    //echo '<link rel="profile" href="http://gmpg.org/xfn/11" />' . "\n"; //http://wordpress.org/support/topic/header-link-httpgmpgorgxfn11?replies=7
+    echo '<link rel="pingback" href="'.get_bloginfo( 'pingback_url' ).'" />' . "\n";
+    
   }
-  add_action( 'wp_head', 'favicon_link' );
+  add_action( 'wp_head', 'setup_head', '1' );
 }
 /* --------------- CUSTOM END --------------- */
 
@@ -178,41 +239,9 @@ wp_enqueue_style( 'bootstrap-responsive-style', get_template_directory_uri() . '
 wp_enqueue_style( 'structure-style', get_template_directory_uri() . '/css/structure.css' );
 wp_enqueue_style( 'main-style', get_template_directory_uri() . '/css/main.css' );
 wp_enqueue_style( 'nabasic-style', get_stylesheet_uri() );
-  
+
 }
 add_action( 'wp_enqueue_scripts', 'nabasic_scripts_styles' );
-
-/**
- * Creates a nicely formatted and more specific title element text
- * for output in head of document, based on current view.
- *
- * @since Twenty Twelve 1.0
- *
- * @param string $title Default title text for current view.
- * @param string $sep Optional separator.
- * @return string Filtered title.
- */
-function nabasic_wp_title( $title, $sep ) {
-  global $paged, $page;
-
-  if ( is_feed() )
-    return $title;
-
-  // Add the site name.
-  $title .= get_bloginfo( 'name' );
-
-  // Add the site description for the home/front page.
-  $site_description = get_bloginfo( 'description', 'display' );
-  if ( $site_description && ( is_home() || is_front_page() ) )
-    $title = "$title $sep $site_description";
-
-  // Add a page number if necessary.
-  if ( $paged >= 2 || $page >= 2 )
-    $title = "$title $sep " . sprintf( __( 'Page %s', 'nabasic' ), max( $paged, $page ) );
-
-  return $title;
-}
-add_filter( 'wp_title', 'nabasic_wp_title', 10, 2 );
 
 
 /** Registers our WIDGET AREAS / SIDEBARS

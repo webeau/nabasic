@@ -2,50 +2,11 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" <?php language_attributes(); ?>> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" <?php language_attributes(); ?>> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" <?php language_attributes(); ?>> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js gt-ie8" <?php language_attributes(); ?>> <!--<![endif]-->
   <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title><?php wp_title( '|', true, 'right' ); ?></title>
-
-    <?php
-      /** SEO
-       * @link http://www.onlinecasinodemar.com/wordpress/tipps/seo-fuer-wordpress-ohne-plugins/
-       */
-    ?>
-
-    <?php if(is_home()) : ?>
-      <meta name="description" content=" <?php bloginfo( 'description' ); ?> ">
-    <?php else : ?>
-      <meta name="description" content=" <?php the_excerpt_rss(); ?> ">
-    <?php endif; ?>
-      <meta name="keywords" content="<?php
-      $posttags = get_the_tags();
-      if ($posttags) {
-        foreach($posttags as $tag) {
-          echo $tag->name . ' ';
-        }
-      }
-    ?>">
-
-    <?php if(is_category() || is_search() || is_archive() || is_tag()) : ?>
-      <meta name="robots" content="noindex, follow">
-    <?php else : ?>
-      <meta name="robots" content="index, follow">
-    <?php endif; ?>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="profile" href="http://gmpg.org/xfn/11" />
-    <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-
-    <!--[if gte IE 9]>
-      <style type="text/css">
-        .gradient {
-           filter: none;
-        }
-      </style>
-    <![endif]-->
-
     <?php wp_head(); ?>
   </head>
   
@@ -95,7 +56,7 @@
 
             <nav id="site-navigation" class="navbar" role="navigation">
               <h1 class="assistive-text"><?php _e( 'Site-Menu', 'nabasic' ); ?></h1>
-              <a class="assistive-text" href="#content" id="scrollTo-Content" title="<?php esc_attr_e( 'Skip to content', 'nabasic' ); ?>"><?php _e( 'Skip to content', 'nabasic' ); ?></a>
+              <a class="assistive-text" href="#main" id="scrollTo-Content" title="<?php esc_attr_e( 'Skip to content', 'nabasic' ); ?>"><?php _e( 'Skip to content', 'nabasic' ); ?></a>
               <div class="navbar-inner">
                 <?php wp_nav_menu(array( 
                   'theme_location'  => 'top-menu',

@@ -11,6 +11,12 @@
 
 @media all { 
 
+/** Support for full multi-stop gradients with IE9 (using SVG).
+ * @link http://www.colorzilla.com/gradient-editor/ 
+ */
+html.gt-ie8 * {
+filter: none !important;
+}
 
 /* =WordPress Core
  * @link http://codex.wordpress.org/CSS#WordPress_Generated_Classes

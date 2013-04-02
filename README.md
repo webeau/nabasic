@@ -9,6 +9,12 @@ Featurelist
 - multilanguage: english/german
 - build on Initializr (Twitter Bootstrap & HTML5 Boilerplate)
 
+02.04.2013
+--------------
+- skip-content change to #main-anker
+- added class gt-ie8 to html to disable filter-style <> Support for full multi-stop gradients with IE9 (using SVG).
+- moved parts of html>>head in functions.php
+
 01.04.2013
 --------------
 - trackback_rdf(); fixed
