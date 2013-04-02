@@ -152,7 +152,7 @@ if ( ! function_exists( 'setup_head' ) ) {
     if (is_single() || is_page() ) : if ( have_posts() ) : while ( have_posts() ) : the_post(); 
       echo '<meta name="description" content="'.esc_attr(na_the_excerpt('15',false)).'" />' . "\n";
     endwhile; endif; elseif(is_home()) : 
-      echo '<meta name="description" content="'.bloginfo('description').'" />' . "\n";
+      echo '<meta name="description" content="'.get_bloginfo('description').'" />' . "\n";
     endif; 
 
     $posttags = get_the_tags();
