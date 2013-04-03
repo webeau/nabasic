@@ -31,7 +31,16 @@
           </h1>      
         </hgroup>
           <?php
-            $images = get_children( array( 'post_parent' => $post->ID, 'post_type' => 'attachment', 'post_mime_type' => 'image', 'orderby' => 'menu_order', 'order' => 'ASC', 'numberposts' => 999 ) );
+            $thumb_ID = get_post_thumbnail_id( $post->ID );
+            $images = get_children( array( 
+              'post_parent' => $post->ID, 
+              'post_type' => 'attachment', 
+              'post_mime_type' => 'image', 
+              'orderby' => 'menu_order', 
+              'order' => 'ASC', 
+              'numberposts' => 30,
+              'exclude' => $thumb_ID
+            ) );
             if ( $images ) : {
               ?>
               <div id="galleryCarousel-<?php echo $post->ID; ?>" class="carousel slide" data-interval="5000">
@@ -130,7 +139,16 @@
 
       <?php else : ?>
         <?php
-          $images = get_children( array( 'post_parent' => $post->ID, 'post_type' => 'attachment', 'post_mime_type' => 'image', 'orderby' => 'menu_order', 'order' => 'ASC', 'numberposts' => 999 ) );
+          $thumb_ID = get_post_thumbnail_id( $post->ID );
+          $images = get_children( array( 
+            'post_parent' => $post->ID, 
+            'post_type' => 'attachment', 
+            'post_mime_type' => 'image', 
+            'orderby' => 'menu_order', 
+            'order' => 'ASC', 
+            'numberposts' => 30,
+            'exclude' => $thumb_ID
+          ) );
           if ( $images ) : {
             ?>
             <div id="galleryCarousel-<?php echo $post->ID; ?>" class="carousel slide" data-interval="5000">
