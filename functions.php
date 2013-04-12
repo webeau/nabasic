@@ -372,7 +372,7 @@ function my_post_image_html( $html, $post_id, $post_image_id ) {
  * Register Custom NAVIGATION WALKER - BOOTSTRAP
  * @link https://github.com/twittem/wp-bootstrap-navwalker/blob/master/README.md
  */
-require_once('js/vendor/twitter_bootstrap_nav_walker.php');
+require_once('js/vendor/wp-bootstrap-navwalker/twitter_bootstrap_nav_walker.php');
 
 
 /** adjust EXCERPT length
