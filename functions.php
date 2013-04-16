@@ -44,6 +44,8 @@ load_theme_textdomain( 'nabasic', get_template_directory() . '/languages' );
 /** EDITOR Style
  * @link https://codex.wordpress.org/Editor_Style
  */
+add_editor_style( 'css/bootstrap.min.css' );
+add_editor_style( 'css/bootstrap-responsive-custom.css' );
 add_editor_style( 'css/_editor.css' );
 
 /** Automatic FEED LINKS
