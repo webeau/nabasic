@@ -118,7 +118,7 @@ foreach($category_ids as $cat_id) {
     
         if($postcount <= $numberhighlightposts && $postcount == '1' && !is_singular() && !is_paged() && !get_post_format() && has_post_thumbnail() && get_theme_mod('show_superteaser',true)) {
           get_template_part( 'content', 'post-superteaser-bottom' );
-        } elseif($postcount <= $numberhighlightposts && $postcount == '1' && !is_singular() && !is_paged() && get_post_format() == 'gallery' && has_post_thumbnail() && get_theme_mod('show_superteaser',true)) {
+        } elseif($postcount <= $numberhighlightposts && $postcount == '1' && !is_singular() && !is_paged() && get_post_format() == 'gallery' && get_theme_mod('show_superteaser',true)) {
           get_template_part( 'content', 'post-superteaser-bottom' );
         } elseif($postcount <= $numberhighlightposts && $postcount == '1' && !get_post_format() && has_post_thumbnail()) {
           echo '<header><h2 class="category"><a href="'.get_category_link($parent_cat_ID).'">'.get_cat_name($parent_cat_ID).'</a></h2></header>';
