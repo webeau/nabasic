@@ -22,6 +22,8 @@
  
  if ( post_password_required() )
 	return;
+ 
+ if ( comments_open() || have_comments() ) :
 ?>
 
 <section id="comments" class="comments-area">
@@ -83,6 +85,7 @@
 
 </section><!-- #comments .comments-area -->
 
+<?php endif; ?>
 
 
 
