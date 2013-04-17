@@ -1503,6 +1503,23 @@ class nabasic_Customize
            <?php endif; ?>
            <?php if (get_theme_mod('display_content_border') == false): ?>
               #main .na-col2 .na-cbox {border: none;}
+           <?php else: ?>
+              body.superteaser #main .na-col1 .na-cbox,
+              body.superteaser #main .na-col2 .na-cbox,
+              body.superteaser #main .na-col3 .na-cbox {
+                border: none;
+                background: none;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+              }
+             <?php if (get_theme_mod('display_content_shadow') == true): ?>
+                body.superteaser #main > .na-wrapper > .na-wbox {
+                  -webkit-box-shadow:  0px 1px 4px 0px rgba(0, 0, 0, 0.15);
+                  box-shadow:  0px 1px 4px 0px rgba(0, 0, 0, 0.15);
+                }
+             <?php endif; ?>
+              <?php self::generate_css('body.superteaser #main > .na-wrapper > .na-wbox', 'border-color', 'default_content_border_color'); ?>
+              <?php self::generate_css('body.superteaser #main > .na-wrapper > .na-wbox', 'background-color', 'default_content_bg_color'); ?>
            <?php endif; ?>
            <?php self::generate_css('#main .na-col2 .na-cbox', 'border-color', 'default_content_border_color'); ?>
            <?php if (get_theme_mod('display_content_shadow') == false): ?>
