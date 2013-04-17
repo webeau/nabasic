@@ -11,6 +11,15 @@ function body_categorized_blog($classes) {
   return $classes;
 }
 
+function superteaser_visible($classes) {
+  $classes[] = 'superteaser';
+  return $classes;
+}
+if(get_theme_mod('show_superteaser',true) && !is_singular() && !is_paged() && !get_post_format() && has_post_thumbnail()) {
+  add_filter('body_class','superteaser_visible');
+} elseif(get_theme_mod('show_superteaser',true) && !is_singular() && !is_paged() && get_post_format() == 'gallery') {
+  add_filter('body_class','superteaser_visible');
+}
 
 get_header(); ?>
 

@@ -242,6 +242,10 @@ border-radius: 4px;
 -webkit-box-shadow:  0px 1px 4px 0px rgba(0, 0, 0, 0.15);
 box-shadow:  0px 1px 4px 0px rgba(0, 0, 0, 0.15);
 }
+body.superteaser #main > .na-wrapper > .na-wbox {
+-webkit-box-shadow:  0px 1px 4px 0px rgba(0, 0, 0, 0.15);
+box-shadow:  0px 1px 4px 0px rgba(0, 0, 0, 0.15);
+}
 header > .na-wrapper > .na-wbox,
 footer > .na-wrapper > .na-wbox {
 }

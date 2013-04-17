@@ -1,4 +1,15 @@
-<?php get_header(); ?>
+<?php 
+function superteaser_visible($classes) {
+  $classes[] = 'superteaser';
+  return $classes;
+}
+if(!get_post_format() && has_post_thumbnail()) {
+  add_filter('body_class','superteaser_visible');
+} elseif(get_post_format() == 'gallery') {
+  add_filter('body_class','superteaser_visible');
+}
+
+get_header(); ?>
 
           <?php
             $sidebar1 = false;

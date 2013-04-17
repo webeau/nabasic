@@ -774,7 +774,7 @@ class nabasic_Customize
          ) 
       );      
       $wp_customize->add_control( 'nabasic_display_post_rss_feed', array(
-            'label' => __( 'Display post bookmark', 'nabasic' ), //Admin-visible name of the control
+            'label' => __( 'Display post rss feed', 'nabasic' ), //Admin-visible name of the control
             'section' => 'single_layout', //ID of the section this control should render in (can be one of yours, or a WordPress default section)
             'settings' => 'display_post_rss_feed', //Which setting to load and manipulate (serialized is okay)
             'priority' => 26, //Determines the order this control appears in for the specified section
@@ -1512,14 +1512,14 @@ class nabasic_Customize
                 -webkit-box-shadow: none;
                 box-shadow: none;
               }
-             <?php if (get_theme_mod('display_content_shadow') == true): ?>
-                body.superteaser #main > .na-wrapper > .na-wbox {
-                  -webkit-box-shadow:  0px 1px 4px 0px rgba(0, 0, 0, 0.15);
-                  box-shadow:  0px 1px 4px 0px rgba(0, 0, 0, 0.15);
-                }
-             <?php endif; ?>
               <?php self::generate_css('body.superteaser #main > .na-wrapper > .na-wbox', 'border-color', 'default_content_border_color'); ?>
               <?php self::generate_css('body.superteaser #main > .na-wrapper > .na-wbox', 'background-color', 'default_content_bg_color'); ?>
+           <?php endif; ?>
+           <?php if (get_theme_mod('display_content_shadow') == false && get_theme_mod('display_main_shadow',true) == false): ?>
+              body.superteaser #main > .na-wrapper > .na-wbox {
+                -webkit-box-shadow: none;
+                box-shadow: none;
+              }
            <?php endif; ?>
            <?php self::generate_css('#main .na-col2 .na-cbox', 'border-color', 'default_content_border_color'); ?>
            <?php if (get_theme_mod('display_content_shadow') == false): ?>
