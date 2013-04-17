@@ -587,7 +587,7 @@ class nabasic_Customize
          ) 
       );      
       $wp_customize->add_control( 'nabasic_show_superteaser', array(
-            'label' => __( 'Show supterteaser on blog-page', 'nabasic' ), //Admin-visible name of the control
+            'label' => __( 'Show superteaser on blog-page', 'nabasic' ), //Admin-visible name of the control
             'section' => 'blog_layout', //ID of the section this control should render in (can be one of yours, or a WordPress default section)
             'settings' => 'show_superteaser', //Which setting to load and manipulate (serialized is okay)
             'priority' => 22, //Determines the order this control appears in for the specified section
@@ -1563,16 +1563,16 @@ class nabasic_Customize
                 #main .na-column23 .na-col3 {margin-right:-<?php echo get_theme_mod('default_sidebar3_width'); ?>;}
                 <?php self::generate_css('#main .na-column23 .na-col3', 'width', 'default_sidebar3_width'); ?> 
                 <?php self::generate_css('#main .na-column23 .na-col3 .na-cbox', 'margin-left', 'default_sidebar3_margin'); ?> 
-                <?php self::generate_css('body .supterteaser-na-column23 .superteaser-top', 'padding-left', 'content_padding_lr'); ?>
-                <?php self::generate_css('body .supterteaser-na-column23 .superteaser-top', 'padding-right', 'sidebar3_padding_lr'); ?>
+                <?php self::generate_css('body .superteaser-na-column23 .superteaser-top', 'padding-left', 'content_padding_lr'); ?>
+                <?php self::generate_css('body .superteaser-na-column23 .superteaser-top', 'padding-right', 'sidebar3_padding_lr'); ?>
               <?php break;
               case '32': ?> 
                 <?php self::generate_css('#main .na-column32', 'padding-left', 'default_sidebar3_width'); ?> 
                 <?php self::generate_css('#main .na-column32 .na-col3', 'width', 'default_sidebar3_width'); ?> 
                 #main .na-column32 .na-col3 {right:<?php echo get_theme_mod('default_sidebar3_width'); ?>;_right:0;/* fix for ie6 */}
                 <?php self::generate_css('#main .na-column32 .na-col3 .na-cbox', 'margin-right', 'default_sidebar3_margin'); ?> 
-                <?php self::generate_css('body .supterteaser-na-column32 .superteaser-top', 'padding-left', 'sidebar3_padding_lr'); ?>
-                <?php self::generate_css('body .supterteaser-na-column32 .superteaser-top', 'padding-right', 'content_padding_lr'); ?>
+                <?php self::generate_css('body .superteaser-na-column32 .superteaser-top', 'padding-left', 'sidebar3_padding_lr'); ?>
+                <?php self::generate_css('body .superteaser-na-column32 .superteaser-top', 'padding-right', 'content_padding_lr'); ?>
               <?php break;
               case '123': ?> 
                 <?php self::generate_css('#main .na-column123', 'padding-left', 'default_sidebar1_width'); ?> 
@@ -1583,28 +1583,28 @@ class nabasic_Customize
                 #main .na-column123 .na-col3 {margin-right:-<?php echo get_theme_mod('default_sidebar3_width'); ?>;}
                 <?php self::generate_css('#main .na-column123 .na-col3', 'width', 'default_sidebar3_width'); ?> 
                 <?php self::generate_css('#main .na-column123 .na-col3 .na-cbox', 'margin-left', 'default_sidebar3_margin'); ?> 
-                <?php self::generate_css('body .supterteaser-na-column123 .superteaser-top', 'padding-left', 'sidebar1_padding_lr'); ?>
-                <?php self::generate_css('body .supterteaser-na-column123 .superteaser-top', 'padding-right', 'sidebar3_padding_lr'); ?>
+                <?php self::generate_css('body .superteaser-na-column123 .superteaser-top', 'padding-left', 'sidebar1_padding_lr'); ?>
+                <?php self::generate_css('body .superteaser-na-column123 .superteaser-top', 'padding-right', 'sidebar3_padding_lr'); ?>
               <?php break;
               case '12': ?> 
                 <?php self::generate_css('#main .na-column12', 'padding-left', 'default_sidebar1_width'); ?> 
                 #main .na-column12 .na-col1 {margin-left:-<?php echo get_theme_mod('default_sidebar1_width'); ?>;}
                 <?php self::generate_css('#main .na-column12 .na-col1', 'width', 'default_sidebar1_width'); ?> 
                 <?php self::generate_css('#main .na-column12 .na-col1 .na-cbox', 'margin-right', 'default_sidebar1_margin'); ?> 
-                <?php self::generate_css('body .supterteaser-na-column12 .superteaser-top', 'padding-left', 'sidebar1_padding_lr'); ?>
-                <?php self::generate_css('body .supterteaser-na-column12 .superteaser-top', 'padding-right', 'content_padding_lr'); ?>
+                <?php self::generate_css('body .superteaser-na-column12 .superteaser-top', 'padding-left', 'sidebar1_padding_lr'); ?>
+                <?php self::generate_css('body .superteaser-na-column12 .superteaser-top', 'padding-right', 'content_padding_lr'); ?>
               <?php break;
               case '21': ?> 
                 <?php self::generate_css('#main .na-column21', 'padding-right', 'default_sidebar1_width'); ?> 
                 #main .na-column21 .na-col1 {margin-right:-<?php echo get_theme_mod('default_sidebar1_width'); ?>;}
                 <?php self::generate_css('#main .na-column21 .na-col1', 'width', 'default_sidebar1_width'); ?> 
                 <?php self::generate_css('#main .na-column21 .na-col1 .na-cbox', 'margin-left', 'default_sidebar1_margin'); ?> 
-                <?php self::generate_css('body .supterteaser-na-column21 .superteaser-top', 'padding-left', 'content_padding_lr'); ?>
-                <?php self::generate_css('body .supterteaser-na-column21 .superteaser-top', 'padding-right', 'sidebar1_padding_lr'); ?>
+                <?php self::generate_css('body .superteaser-na-column21 .superteaser-top', 'padding-left', 'content_padding_lr'); ?>
+                <?php self::generate_css('body .superteaser-na-column21 .superteaser-top', 'padding-right', 'sidebar1_padding_lr'); ?>
               <?php break;
               case '2': ?> 
-                <?php self::generate_css('body .supterteaser-na-column2 .superteaser-top', 'padding-left', 'content_padding_lr'); ?>
-                <?php self::generate_css('body .supterteaser-na-column2 .superteaser-top', 'padding-right', 'content_padding_lr'); ?>
+                <?php self::generate_css('body .superteaser-na-column2 .superteaser-top', 'padding-left', 'content_padding_lr'); ?>
+                <?php self::generate_css('body .superteaser-na-column2 .superteaser-top', 'padding-right', 'content_padding_lr'); ?>
               <?php break;
            };
    }
