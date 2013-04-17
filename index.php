@@ -33,8 +33,12 @@
               while ( $pre_query->have_posts() ) :
                 $pre_query->the_post();
                 if(!is_singular() && !is_paged() && !get_post_format() && has_post_thumbnail()) {
-                  echo '<div class="supterteaser-'.$structure.'">';
+                  echo '<div class="superteaser-'.$structure.'">';
                     get_template_part( 'content', 'post-superteaser-top' );
+                  echo '</div>';
+                } elseif(!is_singular() && !is_paged() && get_post_format() == 'gallery') {
+                  echo '<div class="superteaser-'.$structure.'">';
+                    get_template_part( 'content', 'post-superteaser-top-gallery' );
                   echo '</div>';
                 }
               endwhile;
@@ -73,6 +77,8 @@
                       // @link http://wordpress.stackexchange.com/a/78705
                       $wp_query->query_vars['na_postcount'] = $postcount;
                       if($postcount <= $numberhighlightposts && $postcount == '1' && !is_singular() && !is_paged() && !get_post_format() && has_post_thumbnail() && get_theme_mod('show_superteaser',true)) {
+                        get_template_part( 'content', 'post-superteaser-bottom' );
+                      } elseif($postcount <= $numberhighlightposts && $postcount == '1' && !is_singular() && !is_paged() && get_post_format() == 'gallery' && get_theme_mod('show_superteaser',true)) {
                         get_template_part( 'content', 'post-superteaser-bottom' );
                       } elseif($postcount <= $numberhighlightposts && $postcount == '1' && !is_singular() && !is_paged() && !get_post_format()) {
                         get_template_part( 'content', 'post-highlight-first' );

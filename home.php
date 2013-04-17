@@ -47,11 +47,11 @@ get_header(); ?>
               while ( $pre_query->have_posts() ) :
                 $pre_query->the_post();
                 if(!is_singular() && !is_paged() && !get_post_format() && has_post_thumbnail()) {
-                  echo '<div class="supterteaser-'.$structure.'">';
+                  echo '<div class="superteaser-'.$structure.'">';
                     get_template_part( 'content', 'post-superteaser-top' );
                   echo '</div>';
                 } elseif(!is_singular() && !is_paged() && get_post_format() == 'gallery') {
-                  echo '<div class="supterteaser-'.$structure.'">';
+                  echo '<div class="superteaser-'.$structure.'">';
                     get_template_part( 'content', 'post-superteaser-top-gallery' );
                   echo '</div>';
                 }
