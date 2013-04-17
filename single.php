@@ -128,7 +128,8 @@ get_header(); ?>
                           'tag__in' => $tag_ids,
                           'post__not_in' => array($post->ID),
                           'posts_per_page'=>4, // Number of related posts to display.
-                          'caller_get_posts'=>1
+                          'caller_get_posts'=>1,
+                          'post_type' => 'any'
                         );
                         
                         $my_query = new wp_query( $args );
